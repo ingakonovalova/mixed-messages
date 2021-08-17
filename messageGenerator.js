@@ -1,5 +1,6 @@
 const fs = require('fs')
 
+
 // Defining variables (arrays) for data
 let cities = [];
 let weather = [];
@@ -11,6 +12,7 @@ function takeRandom(list){
     let randomNumber = Math.floor(Math.random() * (list.length - 0) + 0);
     return list[randomNumber];
 }
+
 
 // Function that reads data from csv file and outputs the array that consist of this data
 function readData(file) {
@@ -26,6 +28,7 @@ function readData(file) {
     return data.split(re);;
       
 }
+
 
 // Triggering function readData to read the data and store it to variables created before
 cities = readData("cities.csv");
